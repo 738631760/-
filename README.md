@@ -1,77 +1,4 @@
-<!doctype html>
-<html lang="en">
 
-<head>
-    <meta charset="UTF-8">
-    <title>XP模块合集</title>
-    <style type="text/css">
-        a:link {
-                color:#42b983;
-                font-weight: bold;
-        }
-        a:visited {
-                color:blue;
-                font-weight: bold;
-        }
-        a:hover {
-                color:red;
-                font-weight: bold;
-        }
-        a:active {
-                color:black;
-                font-weight: bold;
-        }
-    </style>
-    
-    <script>
-        var imgs = document.querySelectorAll('img');
-
-        //offsetTop是元素与offsetParent的距离，循环获取直到页面顶部
-        function getTop(e) {
-            var T = e.offsetTop;
-            while(e = e.offsetParent) {
-                T += e.offsetTop;
-            }
-            return T;
-        }
-
-        function lazyLoad(imgs) {
-            var H = document.documentElement.clientHeight;//获取可视区域高度
-            var S = document.documentElement.scrollTop || document.body.scrollTop;
-            for (var i = 0; i < imgs.length; i++) {
-                if (H + S > getTop(imgs[i])) {
-                    imgs[i].src = imgs[i].getAttribute('data-src');
-                }
-            }
-        }
-
-        window.onload = window.onscroll = function () { //onscroll()在滚动条滚动的时候触发
-            lazyLoad(imgs);
-        }
-    </script>
-
-</head>
-<style>
-
-        p{
-            line-height: 30px;
-        }
-        .back{
-            width:50px;
-            height:50px;
-            line-height:50px;
-            background-color: #abcdef;
-            color:#00f;
-            text-align: center;
-            position: fixed;
-            right:30px;
-            bottom:30px;
-            border-radius: 30% 30% 30% 30%;
-            font-size:30px;
-            font-weight:bold;
-            display:none;
-        }
-</style>
 <body>
     <div class="top"></div>
     <main>
@@ -79,7 +6,13 @@
             <article>
                 <h3><p><font color="red">说明：资源均来自</font><a href="http://www.coolapk.com/u/462071" target="_blank" rel="noopener">Android 逆向小子</a></p></h3>
                 <p>蓝奏云网盘统一密码：<mark> OJBK </mark></p>
-                
+                <p>更新日志 ：<a href="https://www.yuque.com/docs/share/3116557d-20f4-41c3-871e-1916bf9fb64c" target="_blank"
+                        rel="noopener">点击查看</a> 请我喝瓶可乐支持一下：
+                        <a href="https://www.yuque.com/docs/share/77e2d958-c82f-4b6b-bceb-14313c60f4ec" target="_blank"
+                        rel="noopener">打赏</a> T.G电报频道：<a href="http://t.me/OJBK2333" target="_blank" rel="noopener">OJBK2333</a></p>
+                <p><img src="https://cdn.nlark.com/yuque/0/2022/png/26257373/1645684066382-4c6399fe-aa01-4d2a-a16f-0f1676b21219.png"
+                        data-origin="https://cdn.nlark.com/yuque/0/2022/png/26257373/1645684066382-4c6399fe-aa01-4d2a-a16f-0f1676b21219.png"
+                        alt="20220220142638Aicy775.png" class="medium-zoom-image"></p>
                 <p>【MAGISK】面具稳定版</p>
                 <p>卡刷包和管理器版本号最好一致，以免出现不必要的问题。 </p>
                 <p>面具卡刷包： <a href="https://nalankang.lanzouo.com/b00u7gexg" target="_blank" rel="noopener">点击查看</a></p>
@@ -1044,74 +977,7 @@
                 <p>小米线刷工具售后版： <a href="https://cloud.189.cn/t/e6Vra2jAfuae" target="_blank" rel="noopener">点击查看</a></p>
                 <p>高通9008线刷工具：<a href="https://nalankang.lanzouo.com/iPvjYp8qw2d" target="_blank"
                         rel="noopener">点击查看</a></p>
-                <p>百度云不限速下载工具：<a href="https://nalankang.lanzouo.com/iD2Ldxkw51g" target="_blank"
+                    <p>百度云不限速下载工具：<a href="https://nalankang.lanzouo.com/iD2Ldxkw51g" target="_blank"
                         rel="noopener">点击查看</a></p>
-            </article>
-        </section>
-    </main>
-    
-    <div class="back">
-        ↑
-    </div>
+                        
 </body>
-<script type="text/javascript">
-        // 只要滚动条发生滚动了，就判断滚动过多少距离，如果大于等于300了，就应该让顶部出现了
-        // 滚动事件
-        
-        // 获取回到顶部
-        var b = document.querySelector(".back");
-        window.onscroll=function(){
-            // console.log(123);
-            // 获取滚动过距离
-            var t = document.documentElement.scrollTop || document.body.scrollTop;
-            // console.log(t);
-            // 判断这个距离是否大于等于300
-            // 获取顶部元素
-            var up = document.querySelector(".top");
-            if(t>=300){
-                // 如果大于等于300了，就让顶部出现
-                // 让顶部出现就是让他的display变成block
-                // up.style.display = "block"
-                up.style.height = "80px"
-            }else{ // 上面的时候消失
-                // up.style.display = "none"
-                up.style.height=0;
-                // console.log(up);
-            }
-        
-            // 回到顶部
-            if(t>=400){
-                b.style.display="block"
-            }else{
-                b.style.display="none"
-            }
-        
-            // 判断滚动条是否回到了0的位置
-            if(t<=0){
-                // 清除定时器
-                // 局部定义的变量，在另一个局部没法使用
-                clearInterval(timer);
-            }
-        }
-        var timer; // 必须变成全局的变量，两个局部中才都能使用
-        // console.log(b);
-        // 给回到顶部绑定单击事件
-        b.onclick=function(){
-            // 让滚动过的距离变成0 - 滚动过的距离可以获取，也可以设置
-            // document.documentElement.scrollTop = 0
-            // document.body.scrollTop = 0
-            // 这种回到顶部是瞬间回去的 - 慢慢回去
-            // 用到每个一会就 让滚动过的距离减小一点 - 定时器
-            timer = setInterval(function(){
-                // 先获取到滚动过的距离，
-                var t = document.documentElement.scrollTop || document.body.scrollTop;
-                // 然后减小一点
-                var t1 = t-600;
-                // 然后将减小的值 赋值 给 滚动过的距离
-                document.documentElement.scrollTop = t1
-                document.body.scrollTop = t1
-                console.log(123);
-            },20);
-        }
-</script>
-</html>
