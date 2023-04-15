@@ -11,7 +11,7 @@
                         <a href="https://www.yuque.com/docs/share/77e2d958-c82f-4b6b-bceb-14313c60f4ec" target="_blank"
                         rel="noopener">打赏</a> T.G电报频道：<a href="http://t.me/OJBK2333" target="_blank" rel="noopener">OJBK2333</a></p>
                 <p><img src="https://cdn.nlark.com/yuque/0/2022/png/26257373/1645684066382-4c6399fe-aa01-4d2a-a16f-0f1676b21219.png"
-                        data-origin="https://cdn.nlark.com/yuque/0/2022/png/26257373/1645684066382-4c6399fe-aa01-4d2a-a16f-0f1676b21219.png"
+                        data-origin="https://icdn.binmt.cc/2304/6439f5bd4f76a.jpg@slim"
                         alt="20220220142638Aicy775.png" class="medium-zoom-image"></p>
                 <p>【MAGISK】面具稳定版</p>
                 <p>卡刷包和管理器版本号最好一致，以免出现不必要的问题。 </p>
